@@ -17,3 +17,5 @@ store_name = gets.chomp
 
 @newStore = Store.create(name: store_name)
 puts @newStore.errors.full_messages
+
+Store.create(name: "HM", annual_revenue: 10, mens_apparel: false, womens_apparel: true)
